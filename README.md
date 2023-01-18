@@ -3,7 +3,7 @@
 ### Описание проекта
 
 Проект выполнен в учебных целяx для курса Яндекс.Практикума.
-В нём реализован REST API CRUD для основных моделей проекта социальной сети Yatube.
+В нём реализован REST API и CRUD для основных моделей проекта социальной сети Yatube.
 
 Пользователю доступен следующий функционал:
 - аутентификация с помощью JWT-токенов, обновление токена;
@@ -15,46 +15,47 @@
 В проекте также реализована пагинация, возможен поиск по подпискам и имеется ограничение прав для некоторых действий пользователя.
 
 ### Стек технологий:
-**Django, Django Rest Framework (DRF)**
+
+<div>
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
+  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green"/>
+  <img src="https://img.shields.io/badge/django%20rest-ff1709?style=for-the-badge&logo=django&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white"/>
+</div>
 
 ### Как запустить проект:
 
 Клонировать репозиторий и перейти в него в командной строке:
-
 ```
 git clone https://github.com/TIoJIuHa/api_final_yatube.git
 ```
-
 ```
 cd api_final_yatube
 ```
 
-```
-cd yatube_api
-```
-
 Cоздать и активировать виртуальное окружение:
-
 ```
 python -m venv env
 ```
-
 ```
 source venv/Scripts/activate
 ```
-
 ```
 python -m pip install --upgrade pip
 ```
 
-Установить зависимости из файла requirements.txt:
-
+Установить зависимости из файла `requirements.txt`:
 ```
 pip install -r requirements.txt
 ```
 
-Выполнить миграции:
+Перейти в папку с фалом `manage.py`:
+```
+cd yatube_api
+```
 
+Выполнить миграции:
 ```
 python manage.py migrate
 ```
