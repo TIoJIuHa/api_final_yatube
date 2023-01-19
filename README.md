@@ -14,7 +14,7 @@
 
 В проекте также реализована пагинация, возможен поиск по подпискам и имеется ограничение прав для некоторых действий пользователя.
 
-### Стек технологий:
+### Стек технологий
 
 <div>
   <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
@@ -24,11 +24,11 @@
   <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white"/>
 </div>
 
-### Как запустить проект:
+### Как запустить проект
 
 Клонировать репозиторий и перейти в него в командной строке:
 ```
-git clone https://github.com/TIoJIuHa/api_final_yatube.git
+git clone <project_url>
 ```
 ```
 cd api_final_yatube
@@ -36,13 +36,10 @@ cd api_final_yatube
 
 Cоздать и активировать виртуальное окружение:
 ```
-python -m venv env
+python -m venv venv
 ```
 ```
 source venv/Scripts/activate
-```
-```
-python -m pip install --upgrade pip
 ```
 
 Установить зависимости из файла `requirements.txt`:
@@ -61,10 +58,10 @@ python manage.py migrate
 ```
 
 Запустить проект:
+```
+python manage.py runserver
+```
 
-```
-python3 manage.py runserver
-```
 ### Примеры запросов к API
 
 После запуска проекта по адресу `http://127.0.0.1:8000/redoc/` будет доступна документация для API Yatube. В ней полностью описано как работает API.
